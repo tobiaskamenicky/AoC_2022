@@ -5,7 +5,9 @@ function day02()
 
     part1 = 0
     part2 = 0
-    for l in 1:5:length(input)
+
+    step = findfirst(r"\R", input)[1]
+    for l in 1:step:length(input)
         o = input[l] - '@'
         m = input[l+2] - 'W'
 
