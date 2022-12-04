@@ -1,6 +1,6 @@
 module Day03
 
-function day03()
+function solve()
     lines = readlines(raw"day-3/input.txt")
 
     scores = Dict([x => i for (i, x) in enumerate(vcat('a':'z', 'A':'Z'))])
@@ -9,30 +9,22 @@ function day03()
     part2 = 0
 
     for line in lines
-        first = line[1:Int(end / 2)]
-        second = line[Int(end / 2 + 1):end]
+        fst = line[1:end÷2]
+        snd = line[end÷2 + 1:end]
 
-        for c in first
-            if c ∈ second
-                part1 += scores[c]
-                break
-            end
-        end
+        c = fst[findfirst(x -> x ∈ snd, fst)]
+        part1 += scores[c]
     end
 
-    for i in 1:3:length(lines)-2
-        for c in lines[i]
-            if (c ∈ lines[i+1] && c ∈ lines[i+2])
-                part2 += scores[c]
-                break
-            end
-        end
+    for par in Iterators.partition(lines, 3)
+        ci = findfirst(x -> x ∈ par[2] && x ∈ par[3], par[1])
+        part2 += scores[par[1][ci]]
     end
 
     return [part1, part2]
 end
 
-result = @time day03()
+result = @time solve()
 println(result)
 
 end

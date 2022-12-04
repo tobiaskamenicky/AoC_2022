@@ -1,6 +1,6 @@
 module Day01
 
-function day01()
+function solve()
     values = Int[]
     group = 0
     for l in eachline(raw"day-1/input.txt")
@@ -20,6 +20,6 @@ function day01()
     return [p1, p2]
 end;
 
-r = @time day01()
+r = @time solve()
 println(r)
 end

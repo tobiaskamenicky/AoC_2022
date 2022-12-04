@@ -1,6 +1,6 @@
 module Day02
 
-function day02()
+function solve()
     input = open(f->read(f, String), raw"day-2/input.txt")
 
     part1 = 0
@@ -18,7 +18,7 @@ function day02()
     return [part1, part2]
 end;
 
-result = @time day02()
+result = @time solve()
 println(result)
 
 end
