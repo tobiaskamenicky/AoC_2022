@@ -21,4 +21,12 @@ Times do not include displaying output
  | [4](https://adventofcode.com/2022/day/4) | 725 µs | 371 KiB |
  | [5](https://adventofcode.com/2022/day/5) | 318 µs | 365 KiB |
  | [6](https://adventofcode.com/2022/day/6) | 550 µs | 1.27 MiB |
- | [7](https://adventofcode.com/2022/day/6) | 307 µs | 177 KiB |
+ | [7](https://adventofcode.com/2022/day/7) | 205 µs | 41 KiB |
+ | [8](https://adventofcode.com/2022/day/8) | 443 ms | 54 KiB |
+
+```
+ Measured on
+   OS: Windows 10 Enterprise x64
+   CPU: Intel(R) Core(TM) i7-11850H @ 2.50GHz
+   RAM: 32GB
+ ```
