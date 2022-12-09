@@ -38,8 +38,8 @@ function solve()
     part1 = length(found) + 2w + 2h - 4
 
     part2 = 0
-    for y = 2:h-1
-        for x = 2:w-1
+    for x = 2:w-1
+        for y = 2:h-1
             v = T[y, x]
             cl, ct, cr, cb = x-1, y-1, w-x, h-y
             for l in x-1:-1:1 T[y, l] >= v && (cl=x-l) | break end

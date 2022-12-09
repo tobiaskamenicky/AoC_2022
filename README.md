@@ -22,7 +22,8 @@ Times do not include displaying output
  | [5](https://adventofcode.com/2022/day/5) | 318 µs | 365 KiB |
  | [6](https://adventofcode.com/2022/day/6) | 550 µs | 1.27 MiB |
  | [7](https://adventofcode.com/2022/day/7) | 205 µs | 41 KiB |
- | [8](https://adventofcode.com/2022/day/8) | 443 ms | 54 KiB |
+ | [8](https://adventofcode.com/2022/day/8) | 443 µs | 54 KiB |
+ | [9](https://adventofcode.com/2022/day/9) | 880 µs | 291 KiB |
 
 ```
  Measured on
